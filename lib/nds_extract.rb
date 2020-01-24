@@ -52,7 +52,7 @@ def movies_with_director_key(name, movies_collection)
   result = []
   row = 0
   while row < movies_collection.length
-     movie_with_director_name(:name, :movies)
+     result[row] = movie_with_director_name(name, :movies)
   end
 end
 
