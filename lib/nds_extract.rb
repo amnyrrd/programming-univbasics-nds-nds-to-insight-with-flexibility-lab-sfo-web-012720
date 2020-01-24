@@ -84,7 +84,15 @@ def movies_with_directors_set(source)
   #
   # Array of Arrays containing all of a director's movies. Each movie will need
   # to have a :director_name key added to it.
-  
+  result = []
+  row = 0
+  if row < source.length
+    movie = source[row][:movies]
+    name = source[row][:movies]
+    result << movies_with_director_key(name, movie)
+    row += 1
+  end
+  result
 end
 
 # ----------------    End of Your Code Region --------------------
