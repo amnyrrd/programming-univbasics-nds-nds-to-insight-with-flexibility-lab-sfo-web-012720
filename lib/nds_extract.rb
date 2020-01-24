@@ -78,6 +78,8 @@ def gross_per_studio(collection)
     studio = collection[row][:studio]
     if result[studio]
       result[studio] += total
+    else
+      result[studio] = total
     end
     row += 1
   end
