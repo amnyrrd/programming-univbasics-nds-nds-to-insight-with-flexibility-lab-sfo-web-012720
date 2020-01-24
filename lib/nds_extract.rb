@@ -76,7 +76,9 @@ def gross_per_studio(collection)
   while row < collection.length
     total = collection[row][:worldwide_gross]
     studio = collection[row][:studio]
-    result[studio] += total
+    if result[studio]
+      result[studio] += total
+    end
     row += 1
   end
   result
