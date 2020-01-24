@@ -86,7 +86,7 @@ def movies_with_directors_set(source)
   # to have a :director_name key added to it.
   result = []
   row = 0
-  if row < source.length
+  while row < source.length
     movie = source[row][:movies]
     name = source[row][:name]
     result << movies_with_director_key(name, movie)
