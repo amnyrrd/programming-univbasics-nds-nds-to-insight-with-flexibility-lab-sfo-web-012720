@@ -88,7 +88,7 @@ def movies_with_directors_set(source)
   row = 0
   if row < source.length
     movie = source[row][:movies]
-    name = source[row][:movies]
+    name = source[row][:name]
     result << movies_with_director_key(name, movie)
     row += 1
   end
